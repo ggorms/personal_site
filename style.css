@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(157, 88, 157);
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    width: 60%;
+    margin-left: 20%;
+    background-color: rebeccapurple;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+#navbar {
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+#navbar > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#name {
+    padding-left: 8px;
+}
+
+h2, h1, h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.content {
+    min-height: 700px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+#description {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#quote {
+    font-family: cursive;
+    text-align: center;
+    font-size: larger;
+    padding-top: 40px;
+    padding-bottom: 100%;
+}
+
+.block {
+    border-top: 2px solid white;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project_title {
+    border-bottom: 1px black solid;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+#port_title {
+    border-bottom: 2px solid white;
+    padding-bottom: 0;
+}
+
+.port_text{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.about {
+    margin-bottom: 20px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.about_text_left {
+    padding-left: 10px;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+footer a {
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+footer img {
+    height: 32px;
+    width: 32px;
+}
+
+footer {
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
