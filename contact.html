@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Home Page</title>
+    <title>Document</title>
 </head>
 <body>
     <nav>
@@ -16,17 +16,17 @@
             <a href="contact.html">CONTACT</a>
         </div>
     </nav>
-    <section class = "content"> <!--HOME PAGE-->
-        <div>
-            <h1> Developer, Artist, Mentor</h1>
-            <h2 id="description">
-                Interested in improving development processes for teams big and small, and helping new developers find their way.            </h2>
-            <h3 id="quote">
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, hic repudiandae saepe, voluptas minima, provident quia voluptates sed cupiditate id neque? Dicta ratione ullam velit architecto culpa sapiente officia quas!" <br>
-                - Julius Caeser
-            </h3>
-        </div>
-    </section>
+    <div class="formdiv" onsubmit="successMessage()">
+        <form action="index.html">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br>
+            <label for="message">Message:</label><br>
+            <input type="text" name="message" id="message"><br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
     <footer>
         <a href="https://www.linkedin.com/"> <img src="linkdin.png" alt="linkdin"></a>
         <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook"></a>

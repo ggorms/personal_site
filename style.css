@@ -10,7 +10,6 @@ html {
 body {
     padding-top: 50px;
     padding-bottom: 50px;
-
     width: 60%;
     margin-left: 20%;
     background-color: rebeccapurple;
@@ -36,29 +35,38 @@ nav {
 
 
 #navbar > a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+#navbar > a:hover {
+    color: blue;
 }
 
 #name {
-    padding-left: 8px;
+    padding-left: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 h2, h1, h3 {
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 p {
     padding-bottom: 10px;
+    margin-right: 5px;
 }
 
 .content {
-    min-height: 700px;
     color: white;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
 
@@ -77,13 +85,19 @@ p {
 
 .block {
     border-top: 2px solid white;
+    padding-right: 10px;
 }
 
 img {
-    height: 150px;
-    width: 150px;
+    max-height: 160px;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-left: 25%;
+}
+
+.white {
+    color: white;
 }
 
 .project_title {
@@ -96,12 +110,7 @@ img {
 }
 
 .project {
-    margin-bottom: 30px;
-    background-color: white;
-    color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
+    
 }
 
 #port_title {
@@ -120,16 +129,8 @@ img {
 .about {
     margin-bottom: 20px;
     padding-right: 10px;
-    display: flex;
 }
 
-.about_text_left {
-    padding-left: 10px;
-}
-
-.right {
-    flex-direction: row-reverse;
-}
 
 footer a {
     padding-right: 20px;
@@ -152,3 +153,43 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.space_right{
+    margin-right: 5px;
+}
+
+.space_left {
+    margin-left: 5px;
+}
+
+label, input {
+    color: white;
+    margin-bottom: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#submit {
+    color: blue;
+}
+
+.formdiv {
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+@media screen and (min-width: 700px){
+    .content {
+        flex-direction: row;
+    }
+    .block {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .project {
+        width: 50%;
+    }
+}
+
